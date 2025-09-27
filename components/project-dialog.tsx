@@ -98,7 +98,7 @@ export function ProjectDialog({
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
           </div>
 
-          {project.trailer ? (
+          {project.trailer && (
             <div className="absolute bottom-3 left-3 flex items-center gap-2">
               <Button
                 size="sm"
@@ -119,14 +119,14 @@ export function ProjectDialog({
                 {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
               </Button>
             </div>
-          ) : null}
+          )}
         </div>
 
         <div className="grid gap-6 p-6 md:grid-cols-[1.2fr,1fr]">
           <div className="space-y-3">
             <DialogHeader className="p-0">
               <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-              {project.tags && project.tags.length > 0 ? (
+              {project.tags?.length ? (
                 <DialogDescription className="text-zinc-300">
                   {project.tags.join(" • ")}
                 </DialogDescription>
@@ -134,22 +134,22 @@ export function ProjectDialog({
             </DialogHeader>
             <p className="text-sm leading-relaxed text-zinc-200">{project.description}</p>
             <div className="flex flex-wrap gap-2 pt-2">
-              {project.links?.live ? (
+              {project.links?.live && (
                 <Button asChild className="bg-white text-black hover:bg-zinc-200">
                   <a href={project.links.live} target="_blank" rel="noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Visit
                   </a>
                 </Button>
-              ) : null}
-              {project.links?.code ? (
+              )}
+              {project.links?.code && (
                 <Button asChild variant="secondary" className="bg-zinc-800 text-white hover:bg-zinc-700">
                   <a href={project.links.code} target="_blank" rel="noreferrer">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </a>
                 </Button>
-              ) : null}
+              )}
             </div>
           </div>
 
