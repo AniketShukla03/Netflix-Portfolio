@@ -29,7 +29,7 @@
       "title": "LinkedIn",
       "type": "linkedin",
       "url": "https://www.linkedin.com/in/aniket-shukla/",
-      "image": "/linked-poster.png",
+      "image": "linked-poster.png",
       "description": "Connect with me on LinkedIn for professional networking."
     },
     {
@@ -49,110 +49,108 @@
       "description": "Schedule a 30-minute call to discuss opportunities."
     }
   ],
- "projects": [
-  {
-    "id": "angela-yu-fullstack",
-    "title": "Angela Yu Full Stack Web Development",
-    "description": "A comprehensive journey into full stack development inspired by Angela Yu’s curriculum, covering front-end, back-end, and deployment.",
-    "image": "/projects/Angela Yu Full Stack web development.jpg",
-    "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "React", "MongoDB"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Web Development",
-    "featured": true
-  },
-  {
-    "id": "collaborative-code-editor",
-    "title": "Real Time Collaborative Code Editor",
-    "description": "A web-based editor that allows multiple developers to collaborate on code simultaneously with live syncing and conflict handling.",
-    "image": "/projects/Real Time Collaborative Code Editor.jpg",
-    "technologies": ["React", "Node.js", "Socket.IO", "Monaco Editor"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Web Development"
-  },
-  {
-    "id": "cross-browser-testing",
-    "title": "Cross-Browser Article Testing",
-    "description": "A testing utility that ensures articles and blogs render consistently across different browsers and devices.",
-    "image": "/projects/Cross-Browser Article Testing.jpg",
-    "technologies": ["Selenium", "Playwright", "JavaScript", "Docker"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Tools"
-  },
-  {
-    "id": "user-location-map",
-    "title": "Location of All the Users",
-    "description": "An interactive dashboard that visualizes the geolocation of all users in real-time on a dynamic world map.",
-    "image": "/projects/Location-of-all-the-users.jpg",
-    "technologies": ["Leaflet.js", "React", "Node.js", "WebSockets"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Visualization"
-  },
-  {
-    "id": "lru-cache-ssml-parser",
-    "title": "LRU Cache and SSML Parser",
-    "description": "A hybrid system combining efficient memory management via LRU cache with intelligent SSML text-to-speech parsing.",
-    "image": "/projects/LRU-cache-and-SSML-parser.jpg",
-    "technologies": ["Python", "Flask", "Redis", "SSML"],
-    "links": { "website": "#", "github": "#" },
-    "category": "AI/ML"
-  },
-  {
-    "id": "job-copilot",
-    "title": "Job Copilot",
-    "description": "An AI-powered career assistant that helps prepare resumes, suggests roles, and navigates the job-hunting process.",
-    "image": "/projects/Job-Copilot.jpg",
-    "technologies": ["Python", "LangChain", "OpenAI", "Next.js"],
-    "links": { "website": "#", "github": "#" },
-    "category": "AI/ML",
-    "featured": true
-  },
-  {
-    "id": "smart-debugger",
-    "title": "Smart Debugger",
-    "description": "An intelligent debugging assistant that identifies, explains, and fixes code errors automatically in real-time.",
-    "image": "/projects/Smart-Debugger.jpg",
-    "technologies": ["Python", "LLMs", "AST Parsing", "VSCode Extension"],
-    "links": { "website": "#", "github": "#" },
-    "category": "AI/ML"
-  },
-  {
-    "id": "astrology-app",
-    "title": "Astrology App",
-    "description": "A modern astrology app that generates personalized horoscopes, charts, and zodiac predictions using astronomy data.",
-    "image": "/projects/Astrology-App.jpg",
-    "technologies": ["React Native", "Firebase", "Node.js"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Mobile"
-  },
-  {
-    "id": "chinese-remainder-theorem",
-    "title": "Chinese Remainder Theorem",
-    "description": "A mathematical tool that demonstrates the application of the Chinese Remainder Theorem with step-by-step solutions.",
-    "image": "/projects/Chinese-Remainder-Theorem.jpg",
-    "technologies": ["Python", "NumPy", "Flask"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Mathematics"
-  },
-  {
-    "id": "auto-language-translator",
-    "title": "Auto Language Translator",
-    "description": "An AI translator that automatically detects input language and translates to the desired target language instantly.",
-    "image": "/projects/Auto Language Translator.jpg",
-    "technologies": ["Python", "Transformers", "Streamlit", "Google Translate API"],
-    "links": { "website": "#", "github": "#" },
-    "category": "AI/ML"
-  },
-  {
-    "id": "hotel-management-system",
-    "title": "Hotel Management System",
-    "description": "A full-fledged hotel management system for handling reservations, billing, staff management, and customer data.",
-    "image": "/projects/Hotel Management System.jpg",
-    "technologies": ["Java", "Spring Boot", "MySQL", "React"],
-    "links": { "website": "#", "github": "#" },
-    "category": "Web Development"
-  }
-]
-  "blogs": [
-    
-  ]
+  "projects": [
+    {
+      "id": "angela-yu-fullstack",
+      "title": "Angela Yu Full Stack Web Development",
+      "description": "A comprehensive journey into full stack development inspired by Angela Yu’s curriculum, covering front-end, back-end, and deployment.",
+      "image": "/projects/angela-yu-fullstack.jpg",
+      "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "React", "MongoDB"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Web Development",
+      "featured": true
+    },
+    {
+      "id": "collaborative-code-editor",
+      "title": "Real Time Collaborative Code Editor",
+      "description": "A web-based editor that allows multiple developers to collaborate on code simultaneously with live syncing and conflict handling.",
+      "image": "/projects/collaborative-code-editor.jpg",
+      "technologies": ["React", "Node.js", "Socket.IO", "Monaco Editor"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Web Development"
+    },
+    {
+      "id": "cross-browser-testing",
+      "title": "Cross-Browser Article Testing",
+      "description": "A testing utility that ensures articles and blogs render consistently across different browsers and devices.",
+      "image": "/projects/cross-browser-testing.jpg",
+      "technologies": ["Selenium", "Playwright", "JavaScript", "Docker"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Tools"
+    },
+    {
+      "id": "user-location-map",
+      "title": "Location of All the Users",
+      "description": "An interactive dashboard that visualizes the geolocation of all users in real-time on a dynamic world map.",
+      "image": "/projects/user-location-map.jpg",
+      "technologies": ["Leaflet.js", "React", "Node.js", "WebSockets"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Visualization"
+    },
+    {
+      "id": "lru-cache-ssml-parser",
+      "title": "LRU Cache and SSML Parser",
+      "description": "A hybrid system combining efficient memory management via LRU cache with intelligent SSML text-to-speech parsing.",
+      "image": "/projects/lru-cache-ssml-parser.jpg",
+      "technologies": ["Python", "Flask", "Redis", "SSML"],
+      "links": { "website": "#", "github": "#" },
+      "category": "AI/ML"
+    },
+    {
+      "id": "job-copilot",
+      "title": "Job Copilot",
+      "description": "An AI-powered career assistant that helps prepare resumes, suggests roles, and navigates the job-hunting process.",
+      "image": "/projects/job-copilot.jpg",
+      "technologies": ["Python", "LangChain", "OpenAI", "Next.js"],
+      "links": { "website": "#", "github": "#" },
+      "category": "AI/ML",
+      "featured": true
+    },
+    {
+      "id": "smart-debugger",
+      "title": "Smart Debugger",
+      "description": "An intelligent debugging assistant that identifies, explains, and fixes code errors automatically in real-time.",
+      "image": "/projects/smart-debugger.jpg",
+      "technologies": ["Python", "LLMs", "AST Parsing", "VSCode Extension"],
+      "links": { "website": "#", "github": "#" },
+      "category": "AI/ML"
+    },
+    {
+      "id": "astrology-app",
+      "title": "Astrology App",
+      "description": "A modern astrology app that generates personalized horoscopes, charts, and zodiac predictions using astronomy data.",
+      "image": "/projects/astrology-app.jpg",
+      "technologies": ["React Native", "Firebase", "Node.js"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Mobile"
+    },
+    {
+      "id": "chinese-remainder-theorem",
+      "title": "Chinese Remainder Theorem",
+      "description": "A mathematical tool that demonstrates the application of the Chinese Remainder Theorem with step-by-step solutions.",
+      "image": "/projects/chinese-remainder-theorem.jpg",
+      "technologies": ["Python", "NumPy", "Flask"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Mathematics"
+    },
+    {
+      "id": "auto-language-translator",
+      "title": "Auto Language Translator",
+      "description": "An AI translator that automatically detects input language and translates to the desired target language instantly.",
+      "image": "/projects/auto-language-translator.jpg",
+      "technologies": ["Python", "Transformers", "Streamlit", "Google Translate API"],
+      "links": { "website": "#", "github": "#" },
+      "category": "AI/ML"
+    },
+    {
+      "id": "hotel-management-system",
+      "title": "Hotel Management System",
+      "description": "A full-fledged hotel management system for handling reservations, billing, staff management, and customer data.",
+      "image": "/projects/hotel-management-system.jpg",
+      "technologies": ["Java", "Spring Boot", "MySQL", "React"],
+      "links": { "website": "#", "github": "#" },
+      "category": "Web Development"
+    }
+  ],
+  "blogs": []
 }
