@@ -12,12 +12,15 @@ export function FooterBar() {
             </p>
           </div>
           <div className="space-y-2 text-sm text-zinc-300">
-            <a className="flex items-center gap-2 hover:text-white" href="mailto:hello@asimadnan.com">
-              <Mail className="h-4 w-4" /> hello@asimadnan.com
+            <a
+              className="flex items-center gap-2 hover:text-white"
+              href="mailto:aniketshukla454@gmail.com"
+            >
+              <Mail className="h-4 w-4" /> aniketshukla454@gmail.com
             </a>
             <a
               className="flex items-center gap-2 hover:text-white"
-              href="https://www.linkedin.com/in/asimadnan/"
+              href="https://www.linkedin.com/in/aniket-shukla/"
               target="_blank"
               rel="noreferrer"
             >
@@ -25,7 +28,7 @@ export function FooterBar() {
             </a>
             <a
               className="flex items-center gap-2 hover:text-white"
-              href="https://github.com/asimadnan"
+              href="https://github.com/aniket454"
               target="_blank"
               rel="noreferrer"
             >
@@ -33,7 +36,7 @@ export function FooterBar() {
             </a>
             <a
               className="flex items-center gap-2 hover:text-white"
-              href="https://calendly.com/asimadnan"
+              href="https://calendly.com/aniketshukla"
               target="_blank"
               rel="noreferrer"
             >
@@ -41,8 +44,8 @@ export function FooterBar() {
             </a>
           </div>
           <div className="text-right text-xs text-zinc-500 md:text-right">
-            <p>© {new Date().getFullYear()} Asim Adnan Eijaz</p>
-            <p>Built with Next.js + shadcn/ui</p>
+            <p>© {new Date().getFullYear()} Aniket Shukla</p>
+            <p>Built with Next.js + Tailwind + shadcn/ui</p>
           </div>
         </div>
       </div>
