@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Github, Linkedin, FileText } from "lucide-react"
 
-export default function NavBar() {
+export function NavBar() {
   return (
     <header className="border-b border-zinc-900 bg-black/80 backdrop-blur-md sticky top-0 z-50">
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-4 sm:px-6 lg:px-8">
