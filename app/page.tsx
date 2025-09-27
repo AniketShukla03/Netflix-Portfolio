@@ -7,6 +7,12 @@ import { RowCarousel, type Project, type Row } from "@/components/row-carousel"
 import { FooterBar } from "@/components/footer-bar"
 import type { ProfileData, ConnectItem, Blog } from "@/lib/types"
 
+// Debug logs — will show undefined if any component import is broken
+console.log("NavBar:", NavBar)
+console.log("HeroProfile:", HeroProfile)
+console.log("RowCarousel:", RowCarousel)
+console.log("FooterBar:", FooterBar)
+
 export default function Page() {
   const [data, setData] = useState<ProfileData | null>(null)
   const [mediumPosts, setMediumPosts] = useState<Blog[]>([])
@@ -19,7 +25,6 @@ export default function Page() {
         const json = (await res.json()) as ProfileData
         setData(json)
 
-        // Fetch Medium posts if username is provided
         if (json.mediumUsername) {
           try {
             const mediumRes = await fetch(`/api/medium?username=${json.mediumUsername}`)
@@ -43,7 +48,7 @@ export default function Page() {
   const rows: Row[] = useMemo(() => {
     if (!data) return []
 
-    // Projects -> Project[]
+    // Projects
     const projects: Project[] = data.projects.map((p) => ({
       id: p.id,
       title: p.title,
@@ -54,9 +59,11 @@ export default function Page() {
       trailer: p.trailer,
     }))
 
-    const featuredItems = projects.filter((p) => data.projects.find((pp) => pp.id === p.id)?.featured === true)
+    const featuredItems = projects.filter((p) =>
+      data.projects.find((pp) => pp.id === p.id)?.featured === true
+    )
 
-    // Combine static blogs with Medium posts
+    // Blogs
     const allBlogs = [...(data.blogs || []), ...mediumPosts]
     const blogItems: Project[] = allBlogs.map((b) => ({
       id: b.id,
@@ -68,12 +75,11 @@ export default function Page() {
       trailer: undefined,
     }))
 
-    // Connect -> Project[] (movie-poster style)
+    // Connect section
     const connectSource: ConnectItem[] =
       data.connect && data.connect.length > 0
         ? data.connect
-        : // Fallback: derive from profile.contact if connect array is not provided
-          ([
+        : ([
             data.profile.contact?.email
               ? {
                   id: "email",
@@ -81,7 +87,8 @@ export default function Page() {
                   type: "email",
                   url: `mailto:${data.profile.contact.email}`,
                   image: "/placeholder.svg?height=900&width=600",
-                  description: "Reach out via email for collaborations and opportunities.",
+                  description:
+                    "Reach out via email for collaborations and opportunities.",
                 }
               : null,
             data.profile.contact?.linkedin
@@ -91,7 +98,8 @@ export default function Page() {
                   type: "linkedin",
                   url: data.profile.contact.linkedin,
                   image: "/placeholder.svg?height=900&width=600",
-                  description: "Connect with me on LinkedIn for professional networking.",
+                  description:
+                    "Connect with me on LinkedIn for professional networking.",
                 }
               : null,
             data.profile.contact?.github
@@ -101,7 +109,8 @@ export default function Page() {
                   type: "github",
                   url: data.profile.contact.github,
                   image: "/placeholder.svg?height=900&width=600",
-                  description: "Explore my open-source projects and contributions.",
+                  description:
+                    "Explore my open-source projects and contributions.",
                 }
               : null,
             data.profile.contact?.resume
@@ -111,7 +120,8 @@ export default function Page() {
                   type: "resume",
                   url: data.profile.contact.resume,
                   image: "/placeholder.svg?height=900&width=600",
-                  description: "Download my latest CV and professional experience.",
+                  description:
+                    "Download my latest CV and professional experience.",
                 }
               : null,
             data.profile.contact?.calendar
@@ -121,7 +131,8 @@ export default function Page() {
                   type: "calendar",
                   url: data.profile.contact.calendar,
                   image: "/placeholder.svg?height=900&width=600",
-                  description: "Schedule a 30-minute call to discuss opportunities.",
+                  description:
+                    "Schedule a 30-minute call to discuss opportunities.",
                 }
               : null,
           ].filter(Boolean) as ConnectItem[])
@@ -130,14 +141,21 @@ export default function Page() {
       id: `connect-${c.id}`,
       title: c.title,
       description: c.description || "",
-      poster: c.image || `/placeholder.svg?height=900&width=600&query=contact-${c.type}`,
+      poster:
+        c.image ||
+        `/placeholder.svg?height=900&width=600&query=contact-${c.type}`,
       tags: ["Connect", c.type].filter(Boolean),
       links: { live: c.url },
       trailer: undefined,
     }))
 
     return [
-      { id: "featured", title: "Featured Projects", anchor: "featured", items: featuredItems },
+      {
+        id: "featured",
+        title: "Featured Projects",
+        anchor: "featured",
+        items: featuredItems,
+      },
       { id: "all-projects", title: "All Projects", anchor: "all", items: projects },
       { id: "blogs", title: "Blogs", anchor: "blog", items: blogItems },
       { id: "connect", title: "Connect with me", anchor: "contact", items: connectItems },
