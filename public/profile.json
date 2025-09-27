@@ -9,8 +9,8 @@
     "contact": {
       "email": "aniketshukla454@gmail.com",
       "resume": "/aniket_resume_2025_AI.pdf",
-      "github": "https://github.com/aniket454",
-      "linkedin": "https://www.linkedin.com/in/aniket-shukla/",
+      "github": "https://github.com/AniketShukla03",
+      "linkedin": "https://www.linkedin.com/in/shukla-aniket/",
       "calendar": "https://calendly.com/aniketshukla"
     }
   },
@@ -28,7 +28,7 @@
       "id": "linkedin",
       "title": "LinkedIn",
       "type": "linkedin",
-      "url": "https://www.linkedin.com/in/aniket-shukla/",
+      "url": "https://www.linkedin.com/in/shukla-aniket/",
       "image": "linked-poster.png",
       "description": "Connect with me on LinkedIn for professional networking."
     },
@@ -36,7 +36,7 @@
       "id": "github",
       "title": "GitHub",
       "type": "github",
-      "url": "https://github.com/aniket454",
+      "url": "https://github.com/AniketShukla03",
       "image": "github-poster.png",
       "description": "Explore my open-source projects and contributions."
     },
@@ -54,7 +54,7 @@
       "id": "angela-yu-fullstack",
       "title": "Angela Yu Full Stack Web Development",
       "description": "A comprehensive journey into full stack development inspired by Angela Yu’s curriculum, covering front-end, back-end, and deployment.",
-      "image": "/projects/angela-yu-fullstack.jpg",
+      "image": "/projects/angelaayufullstack-web-development.jpg",
       "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "React", "MongoDB"],
       "links": { "website": "#", "github": "#" },
       "category": "Web Development",
@@ -64,7 +64,7 @@
       "id": "collaborative-code-editor",
       "title": "Real Time Collaborative Code Editor",
       "description": "A web-based editor that allows multiple developers to collaborate on code simultaneously with live syncing and conflict handling.",
-      "image": "/projects/collaborative-code-editor.jpg",
+      "image": "/projects/real-time-collaborative-codeeditor.jpg",
       "technologies": ["React", "Node.js", "Socket.IO", "Monaco Editor"],
       "links": { "website": "#", "github": "#" },
       "category": "Web Development"
@@ -73,7 +73,7 @@
       "id": "cross-browser-testing",
       "title": "Cross-Browser Article Testing",
       "description": "A testing utility that ensures articles and blogs render consistently across different browsers and devices.",
-      "image": "/projects/cross-browser-testing.jpg",
+      "image": "/projects/cross-browser-article-testing.jpg",
       "technologies": ["Selenium", "Playwright", "JavaScript", "Docker"],
       "links": { "website": "#", "github": "#" },
       "category": "Tools"
@@ -82,7 +82,7 @@
       "id": "user-location-map",
       "title": "Location of All the Users",
       "description": "An interactive dashboard that visualizes the geolocation of all users in real-time on a dynamic world map.",
-      "image": "/projects/user-location-map.jpg",
+      "image": "/projects/location-of-all-the-users.jpg",
       "technologies": ["Leaflet.js", "React", "Node.js", "WebSockets"],
       "links": { "website": "#", "github": "#" },
       "category": "Visualization"
@@ -91,7 +91,7 @@
       "id": "lru-cache-ssml-parser",
       "title": "LRU Cache and SSML Parser",
       "description": "A hybrid system combining efficient memory management via LRU cache with intelligent SSML text-to-speech parsing.",
-      "image": "/projects/lru-cache-ssml-parser.jpg",
+      "image": "/projects/lru-cache-and-ssml-parser.jpg",
       "technologies": ["Python", "Flask", "Redis", "SSML"],
       "links": { "website": "#", "github": "#" },
       "category": "AI/ML"
@@ -154,4 +154,3 @@
   ],
   "blogs": []
 }
-
