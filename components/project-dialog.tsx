@@ -1,7 +1,13 @@
 "use client"
 
 import { useRef, useState, useEffect } from "react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { ExternalLink, Github, Pause, Play, Volume2, VolumeX } from "lucide-react"
@@ -121,7 +127,9 @@ export function ProjectDialog({
             <DialogHeader className="p-0">
               <DialogTitle className="text-2xl">{project.title}</DialogTitle>
               {project.tags && project.tags.length > 0 ? (
-                <DialogDescription className="text-zinc-300">{project.tags.join(" • ")}</DialogDescription>
+                <DialogDescription className="text-zinc-300">
+                  {project.tags.join(" • ")}
+                </DialogDescription>
               ) : null}
             </DialogHeader>
             <p className="text-sm leading-relaxed text-zinc-200">{project.description}</p>
@@ -149,7 +157,7 @@ export function ProjectDialog({
             <InfoItem label="Type" value="Project" />
             <InfoItem label="Stack" value={project.tags?.join(", ") || "—"} />
             <InfoItem label="Status" value={project.links?.live ? "Live" : "Preview"} />
-            <InfoItem label="Owner" value="Asim Adnan Eijaz" />
+            <InfoItem label="Owner" value="Aniket Shukla" />
           </div>
         </div>
       </DialogContent>
