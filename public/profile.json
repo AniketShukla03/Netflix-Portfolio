@@ -54,7 +54,7 @@
       "id": "angela-yu-fullstack",
       "title": "Angela Yu Full Stack Web Development",
       "description": "A comprehensive journey into full stack development inspired by Angela Yu’s curriculum, covering front-end, back-end, and deployment.",
-      "image": "/projects/angelaayufullstack-web-development.jpg",
+      "image": "/projects/angelaayuafull-stack-web-development.jpg",
       "technologies": ["HTML", "CSS", "JavaScript", "Node.js", "React", "MongoDB"],
       "links": { "website": "#", "github": "#" },
       "category": "Web Development",
