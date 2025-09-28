@@ -91,7 +91,7 @@
       "id": "lru-cache-ssml-parser",
       "title": "LRU Cache and SSML Parser",
       "description": "A hybrid system combining efficient memory management via LRU cache with intelligent SSML text-to-speech parsing.",
-      "image": "/projects/lru-cache-and-ssml-parser.jpg",
+      "image": "/projects/LRU-cache-and-SSML-parser.jpg",
       "technologies": ["Python", "Flask", "Redis", "SSML"],
       "links": { "website": "#", "github": "#" },
       "category": "AI/ML"
