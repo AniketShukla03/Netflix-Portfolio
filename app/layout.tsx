@@ -6,9 +6,9 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Asim Adnan Eijaz',
-  description: 'Asim Adnan Eijaz\'s Portfolio',
-  generator: 'Asim',
+  title: 'Aniket Shukla',
+  description: 'Aniket Shukla\'s Portfolio',
+  generator: 'Aniket',
 }
 
 export default function RootLayout({
